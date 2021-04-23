@@ -1,0 +1,56 @@
+.footer {
+  background-color: #304268;
+  color: $color-white;
+  text-transform: uppercase;
+  font-size: $font-size-16;
+  font-weight: normal;
+  line-height: 1.88;
+  padding-top: 60px;
+  padding-bottom: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.list {
+  list-style: none;
+}
+.resources {
+  margin-bottom: 30px;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+.social-media {
+  margin-bottom: 30px;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.small_footer {
+  font-size: 14px;
+  text-transform: none;
+}
+
+@keyframes beats {
+  from {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.heart {
+  display: inline-block;
+  font-size: 20px;
+  color: $brand-color;
+  animation: beats 0.5s infinite;
+  transform-origin: center;
+}

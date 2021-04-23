@@ -1,8 +1,8 @@
 .header {
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
-  height: 568px;
-  width: 100%x;
+  height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,7 +62,7 @@
   height: 44px;
   width: 44px;
   position: relative;
-  top: 30%;
+  top: 20%;
   justify-content: center;
   align-items: center;
 }
@@ -78,19 +78,20 @@
 
 @media all and (min-width: 768px) {
   .title_header {
-    width: 690px;
-    height: 212px;
-    margin-top: 384px;
-    margin-bottom: 172px;
+    margin: 300px 39px 80px 39px;
     word-spacing: 100vw;
-    font-size: 80px;
+    font-size: 40px;
   }
 
   .subtitle_header {
     width: 360px;
     height: 32px;
-    margin: 20px 204px 120px 204px;
-    font-size: 24px;
+    margin: 20px 250px 120px 204px;
+    font-size: 20px;
+  }
+
+  .ico-scroll-down {
+    top: -15%;
   }
 }
 
@@ -98,12 +99,12 @@
   .title_header {
     width: 730px;
     height: 264px;
-    margin: 384px 275px 120px 275px;
-    font-size: 100px;
+    margin: 384px 275px 15px 275px;
+    font-size: 40px;
   }
 
   .subtitle_header {
     width: 730px;
-    margin: 0px 275p 88px 275p;
+    margin: 0px 350p 88px 275p;
   }
 }
