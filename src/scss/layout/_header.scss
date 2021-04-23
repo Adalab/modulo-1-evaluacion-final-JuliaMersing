@@ -2,7 +2,7 @@
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   height: 568px;
-  width: 320px;
+  width: 100%x;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,6 +33,7 @@
   text-align: center;
   padding-left: 15px;
   padding-right: 15px;
+  font-weight: normal;
 }
 
 .ico-menu {
@@ -41,20 +42,68 @@
   width: 44px;
   position: fixed;
   background-color: #0271bc;
-  background-image: url(../images/ico-menu.svg);
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.ico-menu-link {
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/ico-menu.svg);
 }
 
 .ico-scroll-down {
   box-sizing: border-box;
+  display: flex;
   background-color: $color-white;
   border-radius: 44px;
   height: 44px;
   width: 44px;
-  background-image: url(../images/ico-scroll-down.svg);
-  background-repeat: no-repeat;
   position: relative;
   top: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+.ico-scroll-down-link {
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/ico-scroll-down.svg);
+  background-repeat: no-repeat;
+  margin-top: 40px;
+  margin-left: 11px;
+}
+
+@media all and (min-width: 768px) {
+  .title_header {
+    width: 690px;
+    height: 212px;
+    margin-top: 384px;
+    margin-bottom: 172px;
+    word-spacing: 100vw;
+    font-size: 80px;
+  }
+
+  .subtitle_header {
+    width: 360px;
+    height: 32px;
+    margin: 20px 204px 120px 204px;
+    font-size: 24px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .title_header {
+    width: 730px;
+    height: 264px;
+    margin: 384px 275px 120px 275px;
+    font-size: 100px;
+  }
+
+  .subtitle_header {
+    width: 730px;
+    margin: 0px 275p 88px 275p;
+  }
 }
