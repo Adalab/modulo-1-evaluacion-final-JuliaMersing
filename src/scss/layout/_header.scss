@@ -4,23 +4,20 @@
   height: 100vh;
   width: 100%;
   display: flex;
+  background-position: center;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-size: cover;
+  justify-content: flex-end;
 }
 
 .title_header {
   font-family: $font-main;
-  font-size: 42x;
+  font-size: 42px;
   text-transform: uppercase;
   color: $color-white;
   font-weight: bold;
-  width: 290px;
-  height: 110px;
   text-align: center;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .subtitle_header {
@@ -28,8 +25,6 @@
   font-size: $font-size-16;
   text-transform: initial;
   color: $color-white;
-  width: 290px;
-  height: 10px;
   text-align: center;
   padding-left: 15px;
   padding-right: 15px;
@@ -40,12 +35,12 @@
   box-sizing: border-box;
   height: 44px;
   width: 44px;
-  position: fixed;
   background-color: #0271bc;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
 }
 
 .ico-menu-link {
@@ -78,20 +73,14 @@
 
 @media all and (min-width: 768px) {
   .title_header {
-    margin: 300px 39px 80px 39px;
     word-spacing: 100vw;
-    font-size: 40px;
+    font-size: 80px;
   }
 
   .subtitle_header {
     width: 360px;
     height: 32px;
-    margin: 20px 250px 120px 204px;
     font-size: 20px;
-  }
-
-  .ico-scroll-down {
-    top: -15%;
   }
 }
 
@@ -99,12 +88,9 @@
   .title_header {
     width: 730px;
     height: 264px;
-    margin: 384px 275px 15px 275px;
-    font-size: 40px;
+    font-size: 100px;
   }
-
   .subtitle_header {
     width: 730px;
-    margin: 0px 350p 88px 275p;
   }
 }

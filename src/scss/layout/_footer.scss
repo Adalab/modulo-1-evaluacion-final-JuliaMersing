@@ -52,5 +52,17 @@
   font-size: 20px;
   color: $brand-color;
   animation: beats 0.5s infinite;
-  transform-origin: center;
+}
+
+@media all and (min-width: 768px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .small_footer {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
 }

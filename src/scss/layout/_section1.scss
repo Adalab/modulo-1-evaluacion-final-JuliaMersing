@@ -2,11 +2,9 @@
   background-color: $color-white;
   flex-direction: column;
   justify-content: left;
-  margin-top: 30px;
-  margin-bottom: 20px;
   font-family: $font-main;
-  margin-left: 15px;
-  margin-right: 15px;
+  width: 100%;
+  padding: 30px 15px 45px 30px;
 }
 
 .small {
@@ -24,15 +22,12 @@
   box-sizing: border-box;
   width: 290px;
   height: 60px;
-  margin-top: 20px;
   font-size: 24px;
 }
 
 .paragraph {
   color: $main-color;
-  height: 120px;
-  width: 290px;
-  margin-top: 20px;
+  margin-top: 15px;
   font-size: 18px;
 }
 
@@ -44,13 +39,22 @@
   height: 45px;
   font-size: 20px;
   color: $brand-color;
-  margin-top: 30px;
   background-color: $color-white;
+  margin-top: 30px;
+  transition: all ease 0.5s;
+}
+
+.button:hover {
+  background-color: darken($brand-color, 5%);
+  border: 5px solid lighten($brand-color, 5%);
+  cursor: pointer;
+  width: 150px;
+  color: white;
 }
 
 @media all and (min-width: 768px) {
   .wrapper_section1 {
-    margin: 30px 39px 60px 30px;
+    margin: 30px 39px 60px 39px;
   }
   .small {
     width: 216px;
