@@ -13,10 +13,9 @@
   @include centralcolumn();
 
   @media all and (min-width: 768px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
     padding-top: 45px;
+    flex-direction: row;
+    justify-content: space-between;
     @media all and (min-width: 1200px) {
       padding-left: 39px;
       padding-right: 39px;
@@ -45,8 +44,7 @@
     font-size: 14px;
     text-transform: none;
     @media all and (min-width: 768px) {
-      grid-column: 1/2;
-      grid-row: 1/2;
+      order: -1;
     }
   }
 
