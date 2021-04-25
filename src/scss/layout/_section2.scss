@@ -1,11 +1,9 @@
 .grid-wrapper {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 30px 1fr 1fr 1fr 1fr;
+  grid-template-rows: 60px 1fr 1fr 1fr 105px;
   background-color: #eff9ff;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 60px;
   row-gap: 45px;
   @include centralcolumn();
   @media all and (min-width: 768px) {
@@ -15,6 +13,7 @@
 }
 
 .reasons {
+  padding-top: 30px;
   grid-column: span 1;
   grid-row: 1/2;
   text-transform: capitalize;
@@ -24,14 +23,14 @@
     font-size: 26px;
   }
 }
-.section1_title {
+.section2_title {
   font-size: $font-size-18;
   @media all and (min-width: 768px) {
     font-size: 24px;
   }
 }
 
-.section1_paragraph {
+.section2_paragraph {
   font-size: $font-size-18;
   @media all and (min-width: 768px) {
     font-size: 20px;
