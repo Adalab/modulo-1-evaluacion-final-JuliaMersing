@@ -9,26 +9,48 @@
   align-items: center;
   background-size: cover;
   justify-content: flex-end;
+  @include centralcolumn();
 }
 
 .title_header {
-  font-family: $font-main;
   font-size: 42px;
   text-transform: uppercase;
   color: $color-white;
   font-weight: bold;
   text-align: center;
+  width: 290px;
+  margin-bottom: 10px;
+
+  @media all and (min-width: 768px) {
+    width: 630px;
+    font-size: 80px;
+    word-spacing: 100vw;
+    margin-bottom: 20px;
+  }
+
+  @media all and (min-width: 1200px) {
+    width: 730px;
+    font-size: 100px;
+    margin-left: 275px;
+    margin-right: 275px;
+    margin-bottom: 0px;
+  }
 }
 
 .subtitle_header {
-  font-family: $font-main;
-  font-size: $font-size-16;
-  text-transform: initial;
   color: $color-white;
   text-align: center;
-  padding-left: 15px;
-  padding-right: 15px;
   font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 45px;
+
+  @media all and (min-width: 768px) {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  @media all and (min-width: 1200px) {
+    margin-top: 0;
+  }
 }
 
 .ico-menu {
@@ -50,47 +72,25 @@
 }
 
 .ico-scroll-down {
-  box-sizing: border-box;
   display: flex;
   background-color: $color-white;
-  border-radius: 44px;
+  border-radius: 50px;
   height: 44px;
   width: 44px;
-  position: relative;
-  top: 20%;
-  justify-content: center;
-  align-items: center;
+  background-image: url(../images/ico-scroll-down.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 53px;
+
+  @media all and (min-width: 768px) {
+    margin-bottom: 45px;
+  }
+  @media all and (min-width: 1200px) {
+    margin-bottom: 13px;
+  }
 }
 
 .ico-scroll-down-link {
-  width: 50px;
-  height: 50px;
-  background-image: url(../images/ico-scroll-down.svg);
-  background-repeat: no-repeat;
-  margin-top: 40px;
-  margin-left: 11px;
-}
-
-@media all and (min-width: 768px) {
-  .title_header {
-    word-spacing: 100vw;
-    font-size: 80px;
-  }
-
-  .subtitle_header {
-    width: 360px;
-    height: 32px;
-    font-size: 20px;
-  }
-}
-
-@media all and (min-width: 1200px) {
-  .title_header {
-    width: 730px;
-    height: 264px;
-    font-size: 100px;
-  }
-  .subtitle_header {
-    width: 730px;
-  }
+  height: 44px;
+  width: 44px;
 }
