@@ -22,22 +22,25 @@ Hola! Este proyecto es la prueba final del primer módulo de Adalab, que consist
 
 ## Guía de inicio rápido
 
-> **NOTA:** Necesitas tener instalado [ADALAB STARTED KIT](https://github.com/Adalab/adalab-web-starter-kit) para trabajar con este proyecto:
-
-### Pasos a seguir para descargarte el proyecto:
-
 1. **Crea tu propio repositorio.**
 2. Clona este proyecto en tu repositorio.
 3. Inicia **node** para ver el resultado del proyecto.
 
-#### Materiales útiles
+> **NOTA:** Necesitas tener instalado [ADALAB STARTED KIT](https://github.com/Adalab/adalab-web-starter-kit) para trabajar con este proyecto:
 
-## Vídeotutoriales del Starter kit
+### Materiales útiles
+
+#### Vídeotutoriales del Starter kit
 
 - [Qué es, trabajar con la versión de desarrollo y rutas relativas](https://www.youtube.com/watch?v=XwvhXvBijos)
 - [Migración de un proyecto, trabajar con la versión de producción y GitHub Pages](https://www.youtube.com/watch?v=qqGClcgt9Uc)
 - [Motor de plantillas](https://www.youtube.com/watch?v=4GwXOJ045Zg)
 
-## Falta algo?
+#### HTML y CSS
 
-Echas de menos que el kit haga algo en concreto? Pidelo sin problema a través de las issues o si te animas a mejorarlo mándanos un PR :)
+- [Curso de iniciación de HTML] (https://www.codecademy.com/learn/learn-html)
+- [Curso de iniciación de CSS] (https://www.codecademy.com/learn/learn-css)
+
+## ¿Algo que mejorar?
+
+Los feedback siempre son buenos!! Si crees que falta algo o puedo mejorar, utiliza los issues o PR.
