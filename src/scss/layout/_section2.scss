@@ -1,14 +1,17 @@
+.section2 {
+  background-color: #eff9ff;
+}
+
 .grid-wrapper {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 60px 1fr 1fr 1fr 105px;
-  background-color: #eff9ff;
+  grid-template-rows: 60px 1fr 1fr 1fr 46px;
   text-align: center;
   row-gap: 45px;
   @include centralcolumn();
   @media all and (min-width: 768px) {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 46px;
   }
 }
 
@@ -75,12 +78,13 @@
   height: 45px;
   font-size: 20px;
   color: $color-white;
+  background: $brand-color;
   background-color: $brand-color;
-  transition-duration: 0.4s;
   cursor: pointer;
   border: none;
   line-height: 32px;
   margin: 0 auto;
+  transition: all 5s ease;
 
   @media all and (min-width: 768px) {
     grid-column: 2/3;
@@ -89,19 +93,18 @@
 }
 
 .button_reason:hover {
-  background: linear-gradient(180deg, #fbde74 0%, #ff9900 100%);
-  transition: all 0.3s;
+  transform: scale(1.5);
 }
 
 @keyframes flip-scale {
   0% {
-    transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+    transform: scale(1) rotate3d(0, 1, -1, 0deg);
   }
   50% {
-    transform: scale(0.4) rotate3d(-1, 1, 0, -90deg);
+    transform: scale(0.4) rotate3d(0, 1, -1, -90deg);
   }
   100% {
-    transform: scale(1) rotate3d(-1, 1, 0, -180deg);
+    transform: scale(1) rotate3d(0, 1, -1, -180deg);
   }
 }
 
