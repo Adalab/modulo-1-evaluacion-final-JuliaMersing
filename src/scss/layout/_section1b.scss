@@ -1,0 +1,35 @@
+.container_section1b {
+  background-color: #304268;
+  color: $color-white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  text-align: center;
+
+  @media all and (min-width: 768px) {
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+.title {
+  grid-column: span 3;
+  grid-row: 1/2;
+}
+
+.subtitle1 {
+  grid-column: span 3;
+  grid-row: 2/3;
+  @media all and (min-width: 768px) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
+
+.subtitle2 {
+  grid-column: span 3;
+  grid-row: 3/4;
+  @media all and (min-width: 768px) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+}
